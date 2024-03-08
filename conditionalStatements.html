@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know your Weather</title>
+</head>
+
+<body>
+    <h1 style="background-color: burlywood; padding: 10px;">Check Weather status of your city</h1>
+    <script>
+
+        let cityWeather = prompt("Enter Current Temperature: ");
+
+        if (cityWeather == null  || cityWeather.length === 0) {
+            document.write("<i>Please enter valid input temperature</i> 😓");
+            alert("Please enter valid input temperature 😓");
+        }
+
+        else if (cityWeather <= 0) {
+            document.write("<h3>It's freezing outside!🥶 . Don't forget your jacket.</h3>");
+            alert("It's freezing outside! 🥶");
+        }
+
+        else if (cityWeather > 0 && cityWeather <= 28) {
+            document.write("<h3>It's a cold day in " + cityWeather + " 🥶. Maybe you should wear warmer clothes.</h3>");
+            alert("It's cold Weather outside!🥶");
+        }
+
+        else if (cityWeather >= 30 && cityWeather <= 40) {
+            alert("It's hot Weather outside!");
+        }
+
+        else if (cityWeather >= 40 && cityWeather <= 50) {
+            alert("It's too hot Weather outside! 🥵");
+        }
+
+        else {
+            alert("Please enter valid input temperature 😓");
+
+        }
+
+    </script>
+</body>
+
+</html>
