@@ -8,14 +8,17 @@
 </head>
 
 <body>
-    <h1 style="background-color: burlywood; padding: 10px;">Check Weather status of your city</h1>
+    <h1 style="background-color: burlywood; padding: 10px; margin: 0;">
+        Check Weather status of your city
+    </h1>
     <script>
-
+        
         let cityWeather = prompt("Enter Current Temperature: ");
 
-        if (cityWeather == null  || cityWeather.length === 0) {
+        if (cityWeather == null || cityWeather.length === 0) {
             document.write("<i>Please enter valid input temperature</i> 😓");
-            alert("Please enter valid input temperature 😓");
+            alert("Please enter valid input for temperature 😓");
+            console.error("Enter valid input for temperature");
         }
 
         else if (cityWeather <= 0) {
@@ -33,12 +36,13 @@
         }
 
         else if (cityWeather >= 40 && cityWeather <= 50) {
+            console.warn("It's too hot Weather outside! 🥵");
             alert("It's too hot Weather outside! 🥵");
         }
 
         else {
             alert("Please enter valid input temperature 😓");
-
+            console.error("Enter valid input temperature 😓");
         }
 
     </script>
