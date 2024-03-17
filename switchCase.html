@@ -5,7 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Switch case practice</title>
 </head>
-<body>
-    
+<body style="background-color: antiquewhite;">
+    <h1 style="color: red;">Switch Case Practice: </h1>
+    <h3>Simple Switch Case Example in JS</h3>
+
+    <script>
+        
+        const num = prompt("Enter a number 0 to 9");
+        const parsedNum = parseInt(num);
+        console.log(`You entered:  ${parsedNum}`);
+
+        switch (parsedNum) {
+            case 0:
+                console.log("Entered Number is Zero.");
+                break;
+            case 1:
+                console.log("Entered Number is One.");
+                break;
+            case 2:
+                console.log("Entered Number is Two.");
+                break;
+            case 3:
+                console.log("Entered Number is Three.");
+                break;
+            case 4:
+                console.log("Entered Number is Four.");
+                break;
+            case 5:
+                console.log("Entered Number is Five.");
+                break;
+            case 6:
+                console.log("Entered Number is Six.");
+                break;
+            case 7:
+                console.log("Entered Number is Seven.");
+                break;
+            case 8:
+                console.log("Entered Number is Eight.");
+                break;
+            case 9:
+                console.log("Entered Number is Nine.");
+                break;
+            default:
+                console.warn("Please  enter between 0 and 9 only.");
+                console.error("You entered number is out of range.");
+        }
+    </script>
 </body>
+
 </html>
