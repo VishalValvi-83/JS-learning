@@ -15,6 +15,43 @@
         <li><b>Argument But No Return</b></li>
         <li><b>No Argument And No Return</b></li>
     </ol>
+    <script>
+        // Argument and Return:
+
+        function namewithsurename(fistName, lastName) {
+            const fullName = fistName + lastName;
+            return fullName;
+        }
+        const result = namewithsurename("Vishal", "Valvi");
+        console.log(`\n\nThe full name of user is ${result} \n\n`);
+    </script>
+    <script>
+        // No Argument But Return:
+
+        function getMessage() {
+            const a = "I am Student of ICP 7.0";
+            return a;
+        }
+        let message = getMessage();
+        console.log(message);
+    </script>
+    <script>
+        // Argument But No Return
+
+        function greet(name) {
+            console.log("\n\nHello, " + name + "!!!");
+        }
+        greet("I am Vishal Valvi");
+    </script>
+    <script>
+        //No Argument And No Return
+
+        function hscScroe() {
+            let score = 85.5;
+            console.log("HSC Result:\n\nYou Scored in HSC exam is", score);
+        }
+        hscScroe();
+    </script>
 </body>
 
 </html>
