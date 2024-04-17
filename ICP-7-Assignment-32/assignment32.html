@@ -10,7 +10,7 @@
         console.log('You selected the city',city[3]);
 
         console.log("Before PUSH()",city);
-        city.push("kalyan"," Panvel");
+        city.push("Kalyan"," Panvel");
         console.log('After PUSH()',city);
 
         city.pop();
@@ -27,7 +27,18 @@
         city.splice(4, 1,"Thane");
         console.log(city);
 
+        console.log(typeof city);
+        console.log(Array.isArray(city));
+
+        console.log('Array(City) of Cities in reverse:', city.reverse());
         
+        console.log( "Array is Sorted: ", city.sort());
+        console.log( "Array is sorted in reverse:", city.sort().reverse());
+
+        console.log("joining in array :", city.join());
+
+        let cities = city.join(", ");
+        console.log(cities);
     </script>
 </head>
 <body>
